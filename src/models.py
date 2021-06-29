@@ -37,8 +37,8 @@ class Posts(Base):
     Likes = relationship(Likes)
 
 
-class Usuario(Base):
-    __tablename__ = 'usuario'
+class User(Base):
+    __tablename__ = 'user'
 
     username = Column(String(250), primary_key=True)
     posts_id = Column(Integer, ForeignKey('posts.id'))
